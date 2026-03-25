@@ -1,0 +1,39 @@
+{
+  "name": "Voicy Source",
+  "identifier": "com.voicy.source",
+  "sourceURL": "https://jacquesbusiness15-code.github.io/voicy/altstore/source.json",
+  "apps": [
+    {
+      "name": "Voicy",
+      "bundleIdentifier": "com.voicy.app",
+      "developerName": "Voicy Team",
+      "subtitle": "Private Voice Notes with AI",
+      "version": "1.0.0",
+      "versionDate": "2026-03-25",
+      "versionDescription": "Initial release - Voice recording, AI transcription, summaries, Ask AI, translation in 100+ languages.",
+      "downloadURL": "https://github.com/jacquesbusiness15-code/voicy/releases/download/v1.0.0/voicy.ipa",
+      "localizedDescription": "Voicy is a private, AI-powered voice notes app. Record unlimited voice notes and meetings, get AI summaries and to-do lists, ask AI questions across all your notes, and translate in 100+ languages. All data stays on your device. No subscriptions, no tracking.",
+      "iconURL": "https://raw.githubusercontent.com/jacquesbusiness15-code/voicy/main/assets/images/icon.png",
+      "tintColor": "0e3934",
+      "size": 50000000,
+      "permissions": [
+        {
+          "type": "microphone",
+          "usageDescription": "Voicy uses the microphone to record voice notes."
+        },
+        {
+          "type": "faceID",
+          "usageDescription": "Voicy uses Face ID to secure your notes."
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSMicrophoneUsageDescription": "Voicy needs microphone access to record voice notes.",
+          "NSFaceIDUsageDescription": "Voicy uses Face ID to secure your notes."
+        }
+      }
+    }
+  ],
+  "news": []
+}
