@@ -1,7 +1,7 @@
 {
   "name": "Voicy Source",
   "identifier": "com.voicy.source",
-  "sourceURL": "https://jacquesbusiness15-code.github.io/voicy/altstore/source.json",
+  "sourceURL": "https://jacquesbusiness15-code.github.io/voicy/source.json",
   "apps": [
     {
       "name": "Voicy",
