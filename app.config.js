@@ -19,11 +19,15 @@ function loadEnv() {
 
 const env = loadEnv();
 
+const sentryPlugin = env.SENTRY_ORG && env.SENTRY_PROJECT
+  ? [['@sentry/react-native/expo', { organization: env.SENTRY_ORG, project: env.SENTRY_PROJECT }]]
+  : [['@sentry/react-native/expo', { organization: 'dummy', project: 'dummy', uploadSourceMaps: false }]];
+
 module.exports = ({ config }) => ({
   ...config,
   plugins: [
     ...(config.plugins || []),
-    ['@sentry/react-native/expo', { organization: env.SENTRY_ORG || '', project: env.SENTRY_PROJECT || '' }],
+    ...sentryPlugin,
     'expo-sharing',
     'expo-web-browser',
   ],
