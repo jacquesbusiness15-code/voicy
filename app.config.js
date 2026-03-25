@@ -24,6 +24,8 @@ module.exports = ({ config }) => ({
   plugins: [
     ...(config.plugins || []),
     ['@sentry/react-native/expo', { organization: env.SENTRY_ORG || '', project: env.SENTRY_PROJECT || '' }],
+    'expo-sharing',
+    'expo-web-browser',
   ],
   extra: {
     ...config.extra,
